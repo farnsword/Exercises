@@ -47,5 +47,12 @@ public class User {
         User farns = new User();
         farns.setUsername("TestUsername");
         assertEquals("TestUsername", farns.getUsername());
+
+        User burns = new User("TestUsername", "TestPassword");
+        assertEquals("TestUsername", burns.getUsername());
+        assertEquals("TestPassword", burns.getPassword());
+
+        User verns = new User(burns);
+        assertEquals(burns.getPassword(), verns.getPassword());
     }
 }
