@@ -42,13 +42,10 @@ public class User {
         this.password = pswd;
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void usernameMustBeTestUsername(){
         User farns = new User();
         farns.setUsername("TestUsername");
-    }
-
-    @Test
-    public void usernameMustBeTestUsername(User u){
-        assertEquals("TestUsername", u.getUsername());
+        assertEquals("TestUsername", farns.getUsername());
     }
 }
