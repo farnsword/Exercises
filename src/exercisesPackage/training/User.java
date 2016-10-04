@@ -2,7 +2,7 @@ package exercisesPackage.training;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
+import static junit.framework.TestCase.assertEquals;
 
 /**
  * Created by Oleksii on 22.09.2016.
@@ -41,6 +41,8 @@ public class User {
     public void setPassword(String pswd){
         this.password = pswd;
     }
+
+
 
     @Test
     public void usernameMustBeTestUsername(){
